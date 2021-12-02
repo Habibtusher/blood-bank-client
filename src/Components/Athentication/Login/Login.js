@@ -4,12 +4,12 @@ import "./Login.css";
 import avatar from '../../../avatar.svg'
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import swal from 'sweetalert';
-
+import Register from '../Register/Register';
 const Login = () => {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     // const { setLoggedInUser } = useContext(UserContext);
-
+    const [se, setSe] = useState(["habi", "choi"])
     // const history = useHistory()
     // const location = useLocation()
     // let { from } = location.state || { from: { pathname: "/" } };
@@ -48,33 +48,40 @@ const Login = () => {
 
             })
     }
+    const h = () => {
+        console.log(se);
+        <Register></Register>
+    }
     return (
 
-       <div className="main-container">
-            <div className="container">
-            <div className="row loginContainer">
-                <div className="form login-form col-md-6">
-                    <div>
-                    <img className="avatar" src={avatar} alt="" />
-                        <h5 className=" p-2">UserName</h5>
-                        <input onChange={(e) => setUserName(e.target.value)} className="form-control " type="text" />
-                    </div>
-                    <div className="mt-2">
-                        <h5 className=" p-2">Password</h5>
-                        <input onChange={(e) => setPassword(e.target.value)} className="form-control" type="password" />
-                    </div>
-                    <div className="mt-4">
-                        <Link className="a" to="/">Forget Password</Link>
-                        <Link className="a" to="/register">Sign Up</Link>
-                    </div>
-                    <button className="btn mt-4 loginBtn" style={{width:"305px"}} onClick={loginForm}>Login</button>
-                </div>
-                <div className="col-md-6">
-                   
-                </div>
-            </div>
+        <div>
+            <button onClick={h} className="btn btn-danger">go go go</button>
         </div>
-       </div>
+        //    <div className="main-container">
+        //         <div className="container">
+        //         <div className="row loginContainer">
+        //             <div className="form login-form col-md-6">
+        //                 <div>
+        //                 <img className="avatar" src={avatar} alt="" />
+        //                     <h5 className=" p-2">UserName</h5>
+        //                     <input onChange={(e) => setUserName(e.target.value)} className="form-control " type="text" />
+        //                 </div>
+        //                 <div className="mt-2">
+        //                     <h5 className=" p-2">Password</h5>
+        //                     <input onChange={(e) => setPassword(e.target.value)} className="form-control" type="password" />
+        //                 </div>
+        //                 <div className="mt-4">
+        //                     <Link className="a" to="/">Forget Password</Link>
+        //                     <Link className="a" to="/register">Sign Up</Link>
+        //                 </div>
+        //                 <button className="btn mt-4 loginBtn" style={{width:"305px"}} onClick={loginForm}>Login</button>
+        //             </div>
+        //             <div className="col-md-6">
+
+        //             </div>
+        //         </div>
+        //     </div>
+        //    </div>
         //     <div className='login-content'>
         //     <div className="login-container-body">
         //         <div className="login-container container">
