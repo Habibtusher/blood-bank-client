@@ -2,27 +2,28 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='container'>
-            <div className='py-4'>
-                <h2>Contact</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" />
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <div className="container">
+        <div className="py-4 m-0 m-auto">
+          <div className="row">
+            <div className="col-md-6">
+              <img
+                style={{ width: "70%" }}
+                src="https://i.ibb.co/SVMBJ1c/fabicon.png"
+                alt="fabicon"
+                border="0"
+              />
             </div>
+            <div className="col-md-6 mt-5" >
+              <img
+                style={{ borderRadius: "20PX" }}
+                src="https://img.freepik.com/free-vector/coming-soon-banner-with-brick-wall_19426-797.jpg?size=626&ext=jpg"
+                alt="fabicon"
+                border="0"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     );
 };
 
