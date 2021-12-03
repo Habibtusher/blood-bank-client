@@ -6,7 +6,7 @@ const Home = () => {
       <div className="py-4 m-0 m-auto">
         <div className="row">
           <div className="col-md-6">
-            <h3>Hello</h3>
+            <h3>Hello world</h3>
             <img
               style={{ width: "70%" }}
               src="https://i.ibb.co/SVMBJ1c/fabicon.png"
